@@ -1,0 +1,10 @@
+# create new
+# change to your own suffix for the field 'dc=srv,dc=world'
+dn: ou=people,dc=srv,dc=world
+objectClass: organizationalUnit
+ou: people
+
+dn: ou=groups,dc=srv,dc=world
+objectClass: organizationalUnit
+ou: groups 
+

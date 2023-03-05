@@ -1,0 +1,19 @@
+# create new
+# replace to your own domain name for "dc=***,dc=***" section
+dn: uid=xerus,ou=people,dc=srv,dc=world
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: xerus
+sn: ubuntu
+userPassword: {SSHA}xxxxxxxxxxxxxxxxx
+loginShell: /bin/bash
+uidNumber: 2000
+gidNumber: 2000
+homeDirectory: /home/xerus
+
+dn: cn=xerus,ou=groups,dc=srv,dc=world
+objectClass: posixGroup
+cn: xerus
+gidNumber: 2000
+memberUid: xerus
